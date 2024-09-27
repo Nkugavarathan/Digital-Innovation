@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <div class="bg-white shadow fixed top-12 w-full z-40">
+        <div class="container mx-auto px-4 flex items-center justify-between h-16">
+            <a href="index.html" class="text-primary text-3xl font-bold text-lime-500">Fashion</a>
+            <div class="flex space-x-6 text-lime-500">
+                <a href="index.html" class="text-lg hover:bg-lime-500 hover:text-white">Home</a>
+                <a href="shop.html" class="text-lg  hover:bg-lime-500 hover:text-white">Shop</a>
+                <a href="shop-detail.html" class="text-lg  hover:bg-lime-500 hover:text-white">Shop Detail</a>
+                <div class="relative group">
+                    <a href="#" class="text-lg hover:bg-lime-500 hover:text-white ">Pages <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="absolute left-0 top-full mt-2 bg-gray-100 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 text-black">
+                        <a href="cart.html" class="block px-4 py-2 hover:bg-secondary hover:text-primary">Cart</a>
+                        <a href="checkout.html" class="block px-4 py-2 hover:bg-secondary hover:text-primary">Checkout</a>
+                        <a href="testimonial.html" class="block px-4 py-2 hover:bg-secondary hover:text-primary">Testimonial</a>
+                        <a href="404.html" class="block px-4 py-2 hover:bg-secondary hover:text-primary">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="text-lg hover:bg-lime-500 hover:text-white">Contact</a>
+            </div>
+
+            <!-- Search, Cart, User Icons -->
+            <div class="flex items-center space-x-6">
+                <button class="relative">
+                    <i class="fas fa-search text-primary text-2xl"></i>
+                </button>
+                <a href="#" class="relative">
+                    <i class="fa fa-shopping-bag text-2xl"></i>
+                    <span class="absolute bg-secondary text-xs font-bold rounded-full px-2 py-1 top-0 right-0 transform translate-x-1/2 -translate-y-1/2">3</span>
+                </a>
+                <a href="#" class="relative">
+                    <i class="fas fa-user text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="h-screen bg-hero-pattern bg-center bg-cover flex items-center justify-center">
+        <div class="pt-28">
+            <h1 class="text-4xl font-bold text-center mt-12">Welcome to Fruitables</h1>
+            <p class="text-lg text-center mt-4">Your one-stop shop for fresh fruits and groceries.</p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Fruitables. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
