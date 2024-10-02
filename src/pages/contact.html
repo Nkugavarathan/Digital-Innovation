@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-white font-sans">
 
-<body class="">
-    <div class="min-h-screen px-6 py-3">
-        <header class="">
-            <div>
-                <!--logo-->
-            </div>
-            <div>
-                <ul class="flex flex-row gap-10">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <!--search-->
-            </div>
-            <div>
-                <img src="#">
-                <p>Log In</p>
-            </div>
-            <div>
-                <img src="#">
-            </div>
-        </header>
-
-     <!--===============================================-->
-        <main>
-           <div>
-              <h1>Lets Get In<p>Touch!</p></h1>
-              <p>
-
-              </p>
-           </div>
-           <div>
-              <form>
-                <!--form-->
-              </form>
-           </div>
-        </main>
-     <!--===============================================-->
-        <footer>
-            <div>
-                <!--footer 1-->
-            </div>
-            <div>
-                <!--footer 2-->
-            </div>
-        </footer>
-
+  <!-- Navigation Bar -->
+  <nav class="flex justify-between items-center py-4 px-6 bg-white shadow-md">
+    <div class="text-2xl font-bold text-gray-800">MATOA</div>
+    <ul class="flex space-x-6 text-gray-600">
+      <li><a href="#" class="hover:text-gray-900">Home</a></li>
+      <li><a href="#" class="hover:text-gray-900">Products</a></li>
+      <li><a href="#" class="hover:text-gray-900">About Us</a></li>
+      <li><a href="#" class="hover:text-gray-900">Contact Us</a></li>
+    </ul>
+    <div class="flex items-center space-x-4">
+      <a href="#" class="hover:text-gray-900"><i class="fas fa-search"></i></a>
+      <a href="#" class="hover:text-gray-900">Log In</a>
+      <a href="#" class="hover:text-gray-900"><i class="fas fa-shopping-cart"></i></a>
     </div>
-</body>
+  </nav>
 
+  <!-- Contact Section -->
+  <section class="flex flex-col md:flex-row justify-between items-center px-8 py-16 md:px-24 bg-white">
+    <!-- Left Section: Text and Image -->
+    <div class="md:w-1/2 flex flex-col items-start space-y-6">
+      <h1 class="text-4xl font-bold text-gray-800">Let's Get in <span class="text-blue-500">Touch!</span></h1>
+      <p class="text-gray-600">Have a question or need assistance? Reach out to us via email, phone, or the contact form below. We're eager to assist you.</p>
+      <div class="w-80 h-80 rounded-full overflow-hidden">
+        <img src="https://i.imgur.com/4u1CNSr.jpg" alt="Person looking through binoculars" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- Right Section: Form -->
+    <div class="md:w-1/2 mt-10 md:mt-0">
+      <form class="space-y-4">
+        <div>
+          <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name:</label>
+          <input type="text" id="full-name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+          <input type="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700">Message:</label>
+          <textarea id="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-2 px-4 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Submit</button>
+      </form>
+    </div>
+  </section>
+
+</body>
 </html>
