@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signupstyle.css">
+       <!-- icon cdn -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <title>Signup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="signupleft hidden">
+            <div class="signupdetail">
+                <h1>Create your Account</h1>
+                <p id="welcome">Unlock all Features !</p>
+                
+                
+                <form action="" id="form">
+                    <div class="username inputgroup">
+                        <i class="fa-regular fa-user fa-xl" style="color: #969696;"></i>
+                        <input type="text" id="usernameinput" placeholder="Username">
+                        <div class="error"></div>
+                    </div>
+                
+                    <div class="email inputgroup">
+                        <i class="fa-solid fa-envelope fa-xl" style="color: #969696;"></i>
+                        <input type="text" id="emailinput" placeholder="Email">
+                        <div class="error"></div>
+                    </div>
+                
+                    <div class="pas inputgroup">
+                        <i class="fa-solid fa-lock fa-xl" style="color: #969696;" id="passwordicon"></i>
+                        <input type="password" id="passwordinput" placeholder="Password">
+                        <i class="fa-solid fa-eye-slash fa-xl" style="color: #969696;" id="eyeicon"></i>
+                        <div class="error"></div>
+                    </div>
+                
+                    <div class="confirmpas inputgroup">
+                        <i class="fa-solid fa-lock fa-xl" style="color: #969696;" id="passwordicon"></i>
+                        <input type="password" id="confirmpasswordinput" placeholder="Confirm Password">
+                        <i class="fa-solid fa-eye-slash fa-xl" style="color: #969696;" id="eyeicon"></i>
+                        <div class="error"></div>
+                    </div>
+                
+                    <div class="loginbtn">
+                        <button id="loginbtn" type="submit">Log in</button>
+                    </div>
+                </form>
+                <p id="last">You have account? <a href="..\login\login.html" target="_blank">Login now</a></p>
+            </div>
+           
+        </div>
+        <div class="signupimg hiddenright">
+            <img src="signup.png" alt="">
+        </div>
+    </div>
+<script src="signupjs.js"></script>
+</body>
+</html>
