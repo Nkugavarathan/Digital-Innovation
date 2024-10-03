@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+       <!-- icon cdn -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <title>Login</title>
+</head>
+<body>
+    <div class="container " >
+        <div class="loginleft hidden">
+            <div class="logindetail">
+                <h1>Login to your Account</h1>
+                <p id="welcome">Welcome back! Select method to log in:</p>
+                
+                <button id="googlebtn"><img src="googleicon.png" alt="">Google</button>
+                <button id="facebookbtn"><i class="fa-brands fa-facebook" style="color: #0000ff;"></i>Facebook</button>
+                <p id="line"><span>or continue with email</span></p>
+               
+                <form action="" id="form">
+                <div class="email inputgroup">
+                    <i class="fa-solid fa-envelope fa-xl" style="color: #969696;"></i>
+                    <input type="text" id="emailinput" placeholder="Email" > 
+                    <div class="error"></div>
+                </div>
+                <div class="pas inputgroup">
+                    <i class="fa-solid fa-lock fa-xl " style="color: #969696;" id ="passwordicon"></i>
+                    <input type="password" id="passwordinput" placeholder="Password"  >
+                    <i class="fa-solid fa-eye-slash fa-xl" style="color: #969696;" id="eyeicon"></i>
+                    <div class="error"></div>
+                </div>
+                <div class="loginbtnabove">
+                    <input type="checkbox"> Remember me <a href="" id="forgetpas">Forgot Password?</a>
+
+                </div>
+                <div class="loginbtn">
+                    <button id="loginbtn" type="submit">Log in</button>
+                </div>
+            </form>
+                <p id="last">Don't have account? <a href="..\signup\signup.html" target="_blank">Create an account</a></p>
+            </div>
+           
+        </div>
+        <div class="loginimg hiddenright">
+            <img src="login.png" alt="">
+        </div>
+    </div>
+   
+
+   <script src="loginjs.js"></script>
+</body>
+</html>
